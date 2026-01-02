@@ -1,0 +1,1 @@
+double simulate_gbm(double S0, double r, double sigma, double T);

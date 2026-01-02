@@ -1,0 +1,49 @@
+# Real Stock Option Test Data
+# Data as of January 2, 2026 (example values - update with current market data)
+# Format: ticker,stock_price,strike,risk_free_rate,volatility,days_to_expiry,market_call_price
+#
+# Sources for real data:
+#   - Stock prices: Yahoo Finance, Bloomberg
+#   - Option prices: CBOE, Yahoo Finance Options Chain
+#   - Volatility: Historical or Implied Volatility from options chain
+#   - Risk-free rate: US Treasury yields (3-month T-bill)
+#
+# Ticker, S0, K, r, sigma, days_to_expiry, market_price (if known, 0 otherwise)
+
+# Tech Giants - High liquidity options
+AAPL,185.50,185.00,0.045,0.22,30,6.50
+AAPL,185.50,190.00,0.045,0.22,30,4.20
+AAPL,185.50,180.00,0.045,0.22,30,9.10
+AAPL,185.50,185.00,0.045,0.22,60,9.80
+MSFT,375.20,375.00,0.045,0.24,30,13.50
+MSFT,375.20,380.00,0.045,0.24,30,10.80
+GOOGL,140.80,140.00,0.045,0.28,30,6.20
+GOOGL,140.80,145.00,0.045,0.28,30,4.10
+AMZN,185.30,185.00,0.045,0.32,30,9.50
+NVDA,480.50,480.00,0.045,0.45,30,35.20
+NVDA,480.50,500.00,0.045,0.45,30,25.80
+
+# High Volatility - Meme stocks / EV
+TSLA,248.50,250.00,0.045,0.55,30,18.90
+TSLA,248.50,260.00,0.045,0.55,30,14.20
+TSLA,248.50,240.00,0.045,0.55,30,24.50
+GME,15.20,15.00,0.045,0.85,30,2.10
+AMC,4.50,5.00,0.045,0.90,30,0.45
+
+# Blue Chips - Lower volatility
+JNJ,155.80,155.00,0.045,0.15,30,3.80
+PG,150.20,150.00,0.045,0.14,30,3.20
+KO,59.80,60.00,0.045,0.13,30,1.10
+WMT,165.40,165.00,0.045,0.18,30,4.50
+
+# Financial Sector
+JPM,195.60,195.00,0.045,0.22,30,6.80
+BAC,35.20,35.00,0.045,0.25,30,1.45
+GS,385.40,385.00,0.045,0.26,30,15.20
+
+# Different expiries for AAPL
+AAPL,185.50,185.00,0.045,0.22,7,2.80
+AAPL,185.50,185.00,0.045,0.22,14,4.10
+AAPL,185.50,185.00,0.045,0.22,90,11.90
+AAPL,185.50,185.00,0.045,0.22,180,16.50
+AAPL,185.50,185.00,0.045,0.22,365,23.20
