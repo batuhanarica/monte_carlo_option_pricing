@@ -188,16 +188,6 @@ Accuracy scales as `1/√n` — need 4× more simulations for 2× better accurac
 - **No dividends** - Current implementation assumes no dividend payments
 - **Single asset** - No correlation modeling for multi-asset options
 
-## Extending the Project
-
-Ideas for future improvements:
-
-- [ ] Add put option pricing
-- [ ] Implement American options (Longstaff-Schwartz algorithm)
-- [ ] Add variance reduction techniques (antithetic variates, control variates)
-- [ ] Multi-threaded simulation with OpenMP
-- [ ] Greek calculations (Delta, Gamma, Vega, Theta)
-- [ ] Implied volatility solver
 
 ## References
 
